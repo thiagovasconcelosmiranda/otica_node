@@ -1,0 +1,164 @@
+header {
+    nav {
+        width: 100%;
+        height: auto;
+        background-color: black;
+        margin: auto;
+        padding: 10px 0;
+        position: fixed;
+        z-index: 3;
+        .group-navbar {
+            width: 100%;
+            max-width: 1225px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            .logo {
+                .img-logo {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    border: 2px solid #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    h1 {
+                        color: #fff;
+                        font-weight: 200;
+                    }
+                }
+            }
+
+            .ul-links {
+                width: auto;
+                ul {
+                    width: 80%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    li {
+                        width: auto;
+                        margin: 5px;
+                        border-left: 1px solid #fff;
+                        padding-left: 15px;
+                        padding-right: 10px;
+                        a {
+                            color: #fff;
+                            text-transform: uppercase;
+                            padding-left: 10px;
+                            transition: 0.5s;
+                        }
+
+                        a:hover {
+                            color: rgb(0, 110, 255);
+                        }
+                    }
+
+                    li:nth-last-child(4) {
+                        border-left: 0;
+                    }
+                }
+            }
+
+            .social-links {
+                display: flex;
+                ul {
+                    width: 80%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    li {
+                        width: auto;
+                        border: 0;
+                        margin: 5px;
+                        a {
+                            i {
+                                color: #fff;
+                                font-size: 20px;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .button-link {
+                .button {
+                    background-color: rgb(0, 110, 255);
+                    padding: 10px 50px;
+                    cursor: pointer;
+                    transition: 0.5s;
+
+                    p {
+                        color: #fff;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .button:hover {
+                    background-color: #fff;
+
+                    p {
+                        color: rgb(0, 110, 255);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 700px){
+    header nav .group-navbar {
+        padding: 0px 20px;
+        .ul-links {
+            ul {
+                width: 90%;
+                li {
+                    padding: 0;
+                }
+            }
+        }
+
+        .button-link .button {
+            padding: 10px 20px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    header nav .group-navbar {
+        padding: 0px 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .logo {
+            .img-logo {
+                width: 40px;
+                height: 40px;
+                h1 {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .ul-links {
+            width: 50%;
+            ul {
+                width: 90%;
+                li {
+                    padding: 0;
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .button-link .button {
+            padding: 10px 20px;
+        }
+    }
+}
+

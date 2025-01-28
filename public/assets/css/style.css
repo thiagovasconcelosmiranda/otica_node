@@ -1,0 +1,1129 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,800;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1B252F;
+  position: relative;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header nav {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  margin: auto;
+  padding: 10px 0;
+  position: fixed;
+  z-index: 3;
+}
+header nav .group-navbar {
+  width: 100%;
+  max-width: 1225px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+header nav .group-navbar .logo .img-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .group-navbar .logo .img-logo h1 {
+  color: #fff;
+  font-weight: 200;
+}
+header nav .group-navbar .ul-links {
+  width: auto;
+}
+header nav .group-navbar .ul-links ul {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+header nav .group-navbar .ul-links ul li {
+  width: auto;
+  margin: 5px;
+  border-left: 1px solid #fff;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+header nav .group-navbar .ul-links ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  padding-left: 10px;
+  transition: 0.5s;
+}
+header nav .group-navbar .ul-links ul li a:hover {
+  color: rgb(0, 110, 255);
+}
+header nav .group-navbar .ul-links ul li:nth-last-child(4) {
+  border-left: 0;
+}
+header nav .group-navbar .social-links {
+  display: flex;
+}
+header nav .group-navbar .social-links ul {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+header nav .group-navbar .social-links ul li {
+  width: auto;
+  border: 0;
+  margin: 5px;
+}
+header nav .group-navbar .social-links ul li a i {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 10px;
+}
+header nav .group-navbar .button-link .button {
+  background-color: rgb(0, 110, 255);
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+header nav .group-navbar .button-link .button p {
+  color: #fff;
+  text-transform: uppercase;
+}
+header nav .group-navbar .button-link .button:hover {
+  background-color: #fff;
+}
+header nav .group-navbar .button-link .button:hover p {
+  color: rgb(0, 110, 255);
+}
+
+@media (min-width: 700px) {
+  header nav .group-navbar {
+    padding: 0px 20px;
+  }
+  header nav .group-navbar .ul-links ul {
+    width: 90%;
+  }
+  header nav .group-navbar .ul-links ul li {
+    padding: 0;
+  }
+  header nav .group-navbar .button-link .button {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 700px) {
+  header nav .group-navbar {
+    padding: 0px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav .group-navbar .logo .img-logo {
+    width: 40px;
+    height: 40px;
+  }
+  header nav .group-navbar .logo .img-logo h1 {
+    font-size: 14px;
+  }
+  header nav .group-navbar .ul-links {
+    width: 50%;
+  }
+  header nav .group-navbar .ul-links ul {
+    width: 90%;
+  }
+  header nav .group-navbar .ul-links ul li {
+    padding: 0;
+  }
+  header nav .group-navbar .ul-links ul li a {
+    font-size: 12px;
+  }
+  header nav .group-navbar .button-link .button {
+    padding: 10px 20px;
+  }
+}
+main .banner {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/slider/mulher-feliz-a-procura-de-novos-oculos-no-optometrista.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(0, 110, 255);
+}
+main .banner .banner--group-text {
+  width: 50%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+main .banner .banner--group-text .banner--title {
+  margin-bottom: 30px;
+}
+main .banner .banner--group-text .banner--title h3 {
+  color: rgb(0, 110, 255);
+  font-family: "Archivo", Sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+}
+main .banner .banner--group-text .banner--info h1 {
+  color: #FBFBFB;
+  font-family: "Archivo", Sans-serif;
+  font-size: 65px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+}
+main .banner .banner--group-text .banner--info p {
+  color: rgb(0, 110, 255);
+  color: rgb(0, 110, 255);
+  font-family: "Archivo", Sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+}
+main .banner .banner--group-text .banner--info .banner--info-icon {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 40px;
+  margin-top: 10px;
+}
+main .banner .banner--group-text .banner--info .banner--info-icon i {
+  font-size: 20px;
+  color: rgb(0, 110, 255);
+}
+main .banner .banner--group-text .banner--info .banner--info-icon p {
+  font-size: 20px;
+  color: #fff;
+}
+main .hidden {
+  opacity: 0;
+  transition: all 0.8s;
+  filter: blur(-5px);
+  transform: translateX(-100%);
+}
+main .show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+main section .cards--advertising .card:nth-child(5) {
+  transition-delay: 200ms;
+}
+main section .cards--advertising .card:nth-child(4) {
+  transition-delay: 300ms;
+}
+main section .cards--advertising .card:nth-child(3) {
+  transition-delay: 400ms;
+}
+main section .cards--advertising .card:nth-child(2) {
+  transition-delay: 500ms;
+}
+main section .cards--advertising .card:nth-child(1) {
+  transition-delay: 600ms;
+}
+main section .cards--advertising .card-photo:nth-child(3) {
+  transition-delay: 200ms;
+}
+main section .cards--advertising .card-photo:nth-child(2) {
+  transition-delay: 300ms;
+}
+main section .cards--advertising .card-photo:nth-child(1) {
+  transition-delay: 400ms;
+}
+main section {
+  height: auto;
+}
+main section .cards--advertising {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px 0;
+}
+main section .cards--advertising .card {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main section .cards--advertising .card h2 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+main section .cards--advertising .card h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+main section .cards--advertising .card i {
+  color: #fff;
+  font-size: 45px;
+  padding: 10px 0;
+}
+main section .cards--advertising .card h1 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+main section .cards--advertising .img1 {
+  background-image: linear-gradient(rgba(0, 110, 255, 0.9), rgba(0, 110, 255, 0.9)), url("../images/mulheres_oculos.jpg");
+  background-size: cover;
+}
+main section .cards--advertising .img2 {
+  background-image: linear-gradient(rgba(0, 110, 255, 0.9), rgba(0, 110, 255, 0.9)), url("../images/mulheres_oculos.jpg");
+  background-size: cover;
+}
+main section .cards--advertising .img3 {
+  background-image: linear-gradient(rgba(0, 110, 255, 0.9), rgba(0, 110, 255, 0.9)), url("../images/mulheres_oculos.jpg");
+  background-size: cover;
+}
+main section .cards--advertising .img4 {
+  background-image: linear-gradient(rgba(0, 110, 255, 0.9), rgba(0, 110, 255, 0.9)), url("../images/mulheres_oculos.jpg");
+  background-size: cover;
+}
+main section .cards--advertising .img5 {
+  background-image: linear-gradient(rgba(0, 110, 255, 0.9), rgba(0, 110, 255, 0.9)), url("../images/mulheres_oculos.jpg");
+  background-size: cover;
+}
+main section .cards--advertising .card-photo {
+  width: 385px;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+main section .cards--advertising .card-photo .card-photo-info {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+main section .cards--advertising .card-photo .card-photo-info h5 {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+  background-color: rgb(0, 110, 255);
+  transition: all 0.8s;
+}
+main section .cards--advertising .card-photo img {
+  width: 100%;
+  height: inherit;
+  transition: all 0.5s;
+}
+main section .cards--advertising .card-photo img:hover {
+  transform: scale(1.1);
+}
+main section .advertising--info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+main section .advertising--info .advertising--info--text p {
+  color: rgb(0, 110, 255);
+  font-family: "Montserrat", Sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: none;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 26px;
+}
+main section .advertising--info .advertising--info--text h1 {
+  color: #FBFBFB;
+  font-family: "Archivo", Sans-serif;
+  font-size: 65px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+}
+main section .advertising--info .advertising--info--button a {
+  padding: 15px 30px;
+  background-color: rgb(0, 110, 255);
+  font-family: "Archivo", Sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1em;
+  letter-spacing: 0px;
+  word-spacing: 0em;
+  fill: #FFFFFF;
+  color: #FFFFFF;
+  transition: 0.5s;
+}
+main section .advertising--info .advertising--info--button a:hover {
+  background-color: transparent;
+  color: rgb(0, 110, 255);
+  border: 1px solid rgb(0, 110, 255);
+}
+main section .feedbacks-group {
+  width: 90%;
+  height: auto;
+  border: 1px solid rgb(0, 110, 255);
+}
+main section .feedbacks-group .line {
+  width: 50px;
+  height: 30px;
+  margin: auto;
+  background-color: rgb(0, 110, 255);
+  margin-bottom: 40px;
+}
+main section .feedbacks-group .feedbacks--title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+main section .feedbacks-group .feedbacks--title h3 {
+  color: rgb(0, 110, 255);
+  font-family: "Montserrat", Sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: none;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+main section .feedbacks-group .feedbacks--title h1 {
+  color: #FBFBFB;
+  font-family: "Archivo", Sans-serif;
+  font-size: 65px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+}
+main section .feedbacks-group .feedback-cards-group {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+main section .feedbacks-group .feedback-cards-group .feedback-card-right {
+  width: auto;
+  z-index: 1;
+  position: absolute;
+  left: auto;
+  right: 0;
+  top: auto;
+  cursor: pointer;
+  padding-right: 25px;
+}
+main section .feedbacks-group .feedback-cards-group .feedback-card-right i {
+  font-size: 40px;
+  color: #fff;
+}
+main section .feedbacks-group .feedback-cards-group .feedback-card-left {
+  width: 30px;
+  height: auto;
+  position: absolute;
+  left: 0;
+  right: auto;
+  top: auto;
+  cursor: pointer;
+  padding-left: 25px;
+}
+main section .feedbacks-group .feedback-cards-group .feedback-card-left i {
+  font-size: 40px;
+  color: #fff;
+}
+main section .feedbacks-group .feedback-cards-group .feedback--cards {
+  max-width: 75%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+main section .feedbacks-group .feedback-cards-group .feedback--cards .feedback--slider {
+  width: 2300px;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  transition: 0.8s;
+}
+main section .feedbacks-group .feedback-cards-group .feedback--cards .feedback--card {
+  width: 300px;
+  height: 220px;
+}
+main section .feedbacks-group .feedback-cards-group .feedback--cards .feedback--card img {
+  width: 80%;
+  height: 80%;
+}
+main section .feedbacks-group .feedback-cards-group .feedback--cards .feedback--card p {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+main section .feedbacks-group .feedback-cards-group .feedback--cards .feedback--card .info-name {
+  color: rgb(72, 88, 191);
+  font-size: 18px;
+}
+main section .feedbacks-group .feedback-cards-group .feedback-card-circle {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+main section .feedbacks-group .feedback-cards-group .feedback-card-circle div {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+main section .feedbacks-group .feedback-cards-group .feedback-card-circle .active {
+  background-color: rgb(0, 110, 255);
+}
+main section .feedbacks-group .feedback-card-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+main section .feedbacks-group .feedback-card-button button {
+  padding: 10px;
+  padding: 15px 30px;
+  background-color: rgb(0, 110, 255);
+  font-family: "Archivo", Sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1em;
+  letter-spacing: 0px;
+  word-spacing: 0em;
+  fill: #FFFFFF;
+  color: #FFFFFF;
+  transition: 0.5s;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+}
+main section .feedbacks-group .feedback-card-button button:hover {
+  background-color: transparent;
+  color: rgb(0, 110, 255);
+  border: 1px solid rgb(0, 110, 255);
+}
+main section .contact {
+  width: 100%;
+  height: auto;
+  padding: 30px 0;
+}
+main section .contact .contact--title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+main section .contact .contact--title h3 {
+  color: rgb(0, 110, 255);
+  font-family: "Montserrat", Sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: none;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 26px;
+}
+main section .contact .contact--title h1 {
+  color: #FBFBFB;
+  font-family: "Archivo", Sans-serif;
+  font-size: 65px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+}
+main section .contact .contact--cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+main section .contact .contact--cards .contact--card {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+main section .contact .contact--cards .contact--card .contact--card--image {
+  width: 100%;
+  height: 200px;
+}
+main section .contact .contact--cards .contact--card .contact--card--image img {
+  width: 100%;
+  height: 100%;
+}
+main section .contact .contact--cards .contact--card .card-line {
+  width: 100px;
+  height: 10px;
+  background-color: rgb(0, 110, 255);
+  margin-bottom: 30px;
+}
+main section .contact .contact--cards .contact--card .contact--card--text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+main section .contact .contact--cards .contact--card .contact--card--text h1 {
+  color: #fff;
+  font-family: "Archivo", Sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  text-transform: capitalize;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1em;
+  letter-spacing: 1px;
+}
+main section .contact .contact--cards .contact--card .contact--card--text p {
+  color: #ccc;
+  text-transform: uppercase;
+}
+main section .contact .contact--cards .contact--card .contact--card--text a {
+  padding: 15px 30px;
+  background-color: rgb(0, 110, 255);
+  font-family: "Archivo", Sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1em;
+  letter-spacing: 0px;
+  word-spacing: 0em;
+  fill: #FFFFFF;
+  color: #FFFFFF;
+  transition: 0.4s;
+}
+main section .contact .contact--cards .contact--card .contact--card--text a:hover {
+  background-color: transparent;
+  color: rgb(0, 110, 255);
+  border: 1px solid rgb(0, 110, 255);
+}
+main section .contact .contact--form {
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+}
+main section .contact .contact--form form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main section .contact .contact--form form .group--input--row {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+main section .contact .contact--form form .group--input--row .input--error {
+  width: 100%;
+  height: auto;
+  position: relative;
+  gap: 10px;
+}
+main section .contact .contact--form form .group--input--row .input--error .input-error {
+  border: 1px solid red;
+}
+main section .contact .contact--form form .group--input--row .input--error input,
+main section .contact .contact--form form .group--input--row .input--error textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin-top: 30px;
+  color: #fff;
+  outline: none;
+  margin-bottom: 10px;
+}
+main section .contact .contact--form form .group--input--row .input--error span {
+  color: red;
+  visibility: hidden;
+}
+main section .contact .contact--form form .group--input--row .input--error .legend {
+  position: absolute;
+  right: -10px;
+  top: 30px;
+}
+main section .contact .contact--form form .group--input--row .input--error .legend p {
+  color: red;
+  font-size: 30px;
+}
+main section .contact .contact--form form .group--input--row button {
+  width: 100%;
+  padding: 10px 0;
+  padding: 15px 30px;
+  background-color: rgb(0, 110, 255);
+  font-family: "Archivo", Sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1em;
+  letter-spacing: 0px;
+  word-spacing: 0em;
+  border: 0;
+  fill: #FFFFFF;
+  color: #FFFFFF;
+  margin-top: 30px;
+  transition: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+main section .contact .contact--form form .group--input--row button:hover {
+  background-color: transparent;
+  color: rgb(0, 110, 255);
+  border: 1px solid rgb(0, 110, 255);
+}
+main .contact--map {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+main .contact--map .contact-map-i {
+  width: 100%;
+  height: 400px;
+}
+main .modal--feedback {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  position: fixed;
+  top: 0;
+  margin: auto;
+  display: none;
+  align-items: center;
+  z-index: 3;
+}
+main .modal--feedback .modal--feedback-info {
+  width: 40%;
+  height: 100%;
+  max-height: 80%;
+  border-radius: 10px;
+  background-color: #1B252F;
+  border: 1px solid rgb(0, 110, 255);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+  position: relative;
+  padding: 20px 20px;
+  margin-top: 10%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+main .modal--feedback .modal--feedback-info .modal--feedback-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Archivo", Sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+}
+main .modal--feedback .modal--feedback-info .close-i {
+  position: absolute;
+  top: 5px;
+  right: 3%;
+}
+main .modal--feedback .modal--feedback-info .close-i i {
+  color: rgb(0, 110, 255);
+  font-size: 30px;
+  cursor: pointer;
+}
+main .modal--feedback .modal--feedback-info .input-group {
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+main .modal--feedback .modal--feedback-info .input-group span {
+  color: red;
+  font-size: 12px;
+  visibility: hidden;
+}
+main .modal--feedback .modal--feedback-info .input-group label i {
+  color: rgb(0, 110, 255);
+  font-size: 50px;
+  cursor: pointer;
+  margin: auto;
+}
+main .modal--feedback .modal--feedback-info .input-group .input-error {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .modal--feedback .modal--feedback-info .input-group .input-error .error {
+  border-bottom: 1px solid red;
+}
+main .modal--feedback .modal--feedback-info .input-group .input-error .errorTextarea {
+  border: 1px solid red;
+}
+main .modal--feedback .modal--feedback-info .input-group .input-error input,
+main .modal--feedback .modal--feedback-info .input-group .input-error textarea {
+  width: 100%;
+  padding: 10px 5px;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  border-bottom: 2px solid rgb(0, 110, 255);
+  color: #fff;
+}
+main .modal--feedback .modal--feedback-info .input-group .input-error textarea {
+  height: 40px;
+  border: 2px solid rgb(0, 110, 255);
+}
+main .modal--feedback .modal--feedback-info .input-group .input-error .characters {
+  width: 100%;
+}
+main .modal--feedback .modal--feedback-info .input-group .input-error .characters p, main .modal--feedback .modal--feedback-info .input-group .input-error .characters .number-characters {
+  color: rgb(208, 106, 106);
+  font-size: 14px;
+}
+main .modal--feedback .modal--feedback-info .input-group input[type=file] {
+  display: none;
+}
+main .modal--feedback .modal--feedback-info .input-group button {
+  width: 50%;
+  padding: 10px 20px;
+  background-color: rgb(0, 110, 255);
+  font-family: "Archivo", Sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1em;
+  letter-spacing: 0px;
+  word-spacing: 0em;
+  border: 0;
+  fill: #FFFFFF;
+  color: #FFFFFF;
+  margin-top: 30px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+main .modal--feedback .modal--feedback-info .input-group button:hover {
+  background-color: transparent;
+  border: 1px solid rgb(0, 110, 255);
+}
+
+.container {
+  width: 100%;
+  max-width: 1225px;
+  height: 200px;
+  margin: auto;
+}
+
+footer {
+  background-color: #fff;
+}
+footer .footer--group {
+  width: 60%;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+footer .footer--group .footer--logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid rgb(0, 110, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 110, 255);
+}
+footer .footer--group p {
+  color: #ccc;
+}
+footer .footer--group .footer-social {
+  padding: 10px;
+}
+footer .footer--group .footer-social i {
+  color: rgb(0, 110, 255);
+  margin: 5px;
+  font-size: 20px;
+}
+footer .footer-bottom {
+  width: 100%;
+  background-color: rgb(0, 110, 255);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+footer .footer-bottom p {
+  color: #fff;
+}
+
+.whatsapp {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  right: 10px;
+  bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.whatsapp a img {
+  height: 50px;
+  transition: all 1s;
+  position: relative;
+}
+
+a img:hover {
+  transform: scale(1.3);
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+  main .banner .banner--group-text {
+    width: 90%;
+  }
+  main .banner .banner--group-text .banner--info p {
+    font-size: 30px;
+  }
+  main .banner .banner--group-text .banner--info .banner--info-icon i {
+    font-size: 30px;
+  }
+  main .banner .banner--group-text .banner--info .banner--info-icon p {
+    font-size: 30px;
+  }
+  main section .cards--advertising {
+    gap: 10px;
+  }
+  main section .cards--advertising .card h1 {
+    font-size: 0px;
+    font-weight: 0;
+  }
+  main section .advertising--info {
+    width: 100%;
+    align-items: center;
+    padding: 0 30px;
+  }
+  main section .cards--advertising {
+    gap: 50px;
+    background-color: transparent;
+  }
+  main section .cards--advertising .card-photo {
+    width: 90%;
+    height: auto;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  main .modal--feedback .modal--feedback-info {
+    width: 80%;
+  }
+}
+@media (max-width: 700px) {
+  main .banner .banner--group-text {
+    width: 90%;
+  }
+  main .banner .banner--group-text .banner--info p {
+    font-size: 18px;
+  }
+  main .banner .banner--group-text .banner--info h1 {
+    font-size: 30px;
+  }
+  main .banner .banner--group-text .banner--info .banner--info-icon i,
+  main .banner .banner--group-text .banner--info .banner--info-icon p {
+    font-size: 18px;
+  }
+  main section .cards--advertising {
+    gap: 10px;
+  }
+  main section .cards--advertising .card {
+    width: 90%;
+    height: 250px;
+  }
+  main section .cards--advertising .card h1 {
+    font-size: 40px;
+    font-weight: 0;
+    color: #FBFBFB;
+    font-family: "Archivo", Sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: normal;
+    text-decoration: none;
+  }
+  main section .cards--advertising .card h2 {
+    font-size: 50px;
+    font-weight: 0;
+    color: #FBFBFB;
+    font-family: "Archivo", Sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: normal;
+    text-decoration: none;
+  }
+  main section .cards--advertising .card h3 {
+    font-size: 30px;
+  }
+  main section .advertising--info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  main section .cards--advertising {
+    gap: 50px;
+    background-color: transparent;
+  }
+  main section .cards--advertising .card-photo {
+    width: 90%;
+    height: auto;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  main section .feedbacks-group .feedbacks--title h1 {
+    font-size: 40px;
+  }
+  main section .contact .contact--title h1 {
+    font-size: 50px;
+  }
+  main section .contact .contact--cards .contact--card {
+    height: auto;
+  }
+  main section .contact .contact--form form .group--input--row {
+    flex-direction: column;
+  }
+  main .modal--feedback .modal--feedback-info {
+    width: 100%;
+    height: 100%;
+  }
+}
+.alert-i {
+  max-width: 300px;
+  padding: 20px;
+  position: fixed;
+  top: 20%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 1px solid rgb(0, 110, 255);
+  background-color: #333;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+.alert-i p {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.alert-feedback {
+  width: 100%;
+  padding: 10px;
+  display: none;
+  justify-items: center;
+  align-items: center;
+  border: 1px solid rgb(0, 110, 255);
+}
+.alert-feedback p {
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+}/*# sourceMappingURL=style.css.map */

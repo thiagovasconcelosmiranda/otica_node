@@ -1,0 +1,211 @@
+{{>partials/header}}
+<main>
+    <section id="inicio">
+        <div class="banner">
+            <div class="banner--group-text">
+                <div class="banner--title">
+                    <h3>Confira</h3>
+                </div>
+                <div class="banner--info">
+                    <h1>Compre sem sair de Casa</h1>
+                    <p>São mais de 2000. modelos</p>
+                    <div class="banner--info-icon">
+                        <i class="fa-solid fa-truck"></i>
+                        <p>Frete grátis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="modelos" class="hidden">
+        <div class="cards--advertising container ">
+            <div class="card img1 hidden">
+                <h3>Fabricação</h3>
+                <i class="fa-solid fa-glasses"></i>
+                <h3>Própria</h13>
+            </div>
+            <div class="card img2 hidden">
+                <h3>Armações</h3>
+                <h2>R$ 49,99</h2>
+                <h3>Preço único</h3>
+            </div>
+            <div class="card img3 hidden">
+                <h2>+1000 </h2>
+                <h1>Modelos</h>
+                    <h3>Preço único</h3>
+            </div>
+            <div class="card img4 hidden">
+                <h3>Oculos </h3>
+                <h1>Pronto em</h1>
+                <h3>1 Hora</h3>
+            </div>
+            <div class="card img5 hidden">
+                <h3>1 ano de</h3>
+                <i class="fa-solid fa-stamp"></i>
+                <h3>Garatia</h3>
+            </div>
+        </div>
+        <div class="advertising--info container hidden">
+            <div class="advertising--info--text">
+                <p>Óculos também é estilo</p>
+                <h1>Estilo</h1>
+            </div>
+            <div class="advertising--info--button">
+                <a href="">Ver todos</a>
+            </div>
+        </div>
+        <div class="cards--advertising container hidden">
+            <div class="card-photo hidden">
+                <div class="card-photo-info">
+                    <h5>Varios modelos</h5>
+                </div>
+                <img src="assets/images/oculos-com-armacao-levemente-arredondada (1).jpg">
+            </div>
+
+            <div class="card-photo hidden">
+                <img src="assets/images/retrato-de-um-homem-legal-com-oculos-de-sol-dancando.jpg" alt="">
+                <div class="card-photo-info">
+                    <h5>Modelos Masculino</h5>
+                </div>
+            </div>
+            <div class="card-photo hidden">
+                <img src="assets/images/mulher-atraente-na-consulta-no-consultorio-oftalmologico.jpg" alt="">
+                <div class="card-photo-info">
+                    <h5>Modelos Feminino</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="feedback" class="hidden">
+        <div class="feedbacks-group container hidden">
+            <div class="line"></div>
+            <div class="feedbacks--title">
+                <h3>Feedback</h3>
+                <h1>Clientes</h1>
+                <h1>Satisfeitos</h1>
+            </div>
+            <div class="feedback-cards-group ">
+                <div class="feedback-card-right">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="feedback--cards">
+                    {{#feedbacks}}
+                    <div class="feedback--slider">
+                        <div class="feedback--card">
+                            <img src='assets/media/{{id}}/{{image}}'/>
+                            <p class="info-name">{{name}}</p>
+                            <p>{{description}}</p>
+                            
+                        </div>
+                    </div>
+                     {{/feedbacks}}
+                    <div class="circle-group">
+                        <div class="circle"></div>
+                        <div class="circle active"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="feedback-card-left">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="feedback-card-circle"></div>
+            </div>
+            <div class="feedback-card-button">
+                <button>Novo comentário</button>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="hidden">
+        <div class="contact container">
+            <div class="contact--title ">
+                <h3>Venha fazer parte</h3>
+                <h1>Contato</h1>
+            </div>
+            <div class="contact--cards hidden">
+                <duv class="contact--card">
+                    <div class="contact--card--image">
+                        <img src="assets/images/FOTOPAULO-scaled.jpeg">
+                    </div>
+                    <div class="contact--card--text">
+                        <h1>Ótica Estilo - Penha</h1>
+                        <h1>AV: Itaquera, nº 25</h1>
+                        <p>JD Fernandez</p>
+                        <p>São Paulo-SP</p>
+
+                        <a href="">Clique aqui</a>
+                    </div>
+                </duv>
+                <duv class="contact--card hidden">
+                    <div class="card-line"></div>
+                    <div class="contact--card--text">
+                        <h1>Fale com</h1>
+                        <h1>nossos atendentes</h1>
+                        <p>Seg - sext 9h -18h</p>
+                        <p>Sabádo 9h -18h</p>
+                        <a href="">Clique aqui</a>
+                    </div>
+            </div>
+            <div class="contact--form container hidden">
+                <form class="contact-form" method="post">
+                    <div class="group--input--row">
+                        <div class="input--error">
+                            <input type="text" name="firstName" id="1" placeholder="NOME">
+                            <div class="legend">
+                                <p>*</p>
+                            </div>
+                            <span id="error-1">Campos obrigatório</span>
+                        </div>
+                        <div class="input--error">
+                            <input type="text" name="lastName" id="2" placeholder="SOBRE NOME">
+                            <div class="legend">
+                                <p>*</p>
+                            </div>
+                            <span id="error-2">Campos obrigatório</span>
+                        </div>
+                    </div>
+                    <div class="group--input--row">
+                        <div class="input--error">
+                            <input type="email" id="3" name="email" placeholder="EMAIL">
+                            <div class="legend">
+                                <p>*</p>
+                            </div>
+                            <span id="error-3">Campos obrigatório</span>
+                        </div>
+                        <div class="input--error">
+                            <input type="text" name="phone" id="4" placeholder="CELULAR">
+                            <div class="legend">
+                                <p>*</p>
+                            </div>
+                            <span id="error-4">Campos obrigatório</span>
+                        </div>
+                    </div>
+                    <div class="group--input--row">
+                        <div class="input--error">
+                            <textarea name="descrition" id="5" placeholder="DESCRIÇÃO" cols="30" rows="10"></textarea>
+                            <div class="legend">
+                                <p>*</p>
+                            </div>
+                            <span id="error-5">Campos obrigatório</span>
+                        </div>
+                    </div>
+                    <div class="group--input--row">
+                        <button id="button--contact" type="button">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+        <div class="contact--map">
+            <div class="contact-map-i container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.5828316311645!2d-46.464027325415884!3d-23.5475021788094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce673b104a651f%3A0x4de3bc905c24e2f9!2sAv.%20Itaquera%20-%20Vila%20Carmosina%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1sen!2sbr!4v1704760321405!5m2!1sen!2sbr"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+   {{>partials/modal-feedback}}
+   {{>partials/alert-message}}
+</main>
+{{>partials/footer}}

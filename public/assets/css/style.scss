@@ -1,0 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,800;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1B252F;
+    position: relative;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+   text-decoration: none;
+}
+
+@import '../css/partials/header';
+@import '../css/partials/main';
+@import '../css/partials/alert';

@@ -1,0 +1,48 @@
+ <!--Modal-feedback-->
+    <div class="modal--feedback">
+        <div class="modal--feedback-info">
+            <div class="alert-feedback">
+              <p>Feedback enviado com sucesso!</p>
+            </div>
+            <div class="modal--feedback-title">
+                <h2>Feedback</h2>
+            </div>
+            <div class="close-i">
+                <i class="fa-regular fa-rectangle-xmark"></i>
+            </div>
+            <form>
+                <div class="input-group">
+                    <div class="input-error">
+                        <label for="6">
+                            <i class="fa-regular fa-image"></i>
+                        </label>
+                        <input id="6" type="file" onchange="upload()">
+                        <span id="msg-6">Campos obrigatório</span>
+                    </div>
+
+                </div>
+                <div class="input-group">
+                    <div class="input-error">
+                        <input type="text" name="name" id="7" placeholder="NOME">
+                        <span id="msg-7">Campos obrigatório</span>
+                    </div>
+                    <div class="input-error">
+                        <input type="email" id="8" name="email" placeholder="EMAIL">
+                        <span id="msg-8">Campos obrigatório</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-error">
+                        <textarea class="description-feedback" maxlength="40" name="description" placeholder="DESCRIÇÃO" id="9" cols="10" rows="10"></textarea>
+                        <span id="msg-9">Campos obrigatório</span>
+                        <div class="characters">
+                           <p>Faltam <span class="number-characters">40</span> caracteres</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <button id="button-feedback" type="button">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>

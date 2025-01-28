@@ -1,0 +1,37 @@
+.alert-i {
+    max-width: 300px;
+    padding: 20px;
+    position: fixed;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 1px solid rgb(0, 110, 255);
+    background-color: #333;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+
+    p {
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+
+    }
+}
+.alert-feedback{
+    width: 100%;
+    padding: 10px;
+    display: none;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid rgb(0, 110, 255);
+
+    p{
+      color: #fff;
+      text-align: center;
+      font-weight: 600;
+    }
+}
