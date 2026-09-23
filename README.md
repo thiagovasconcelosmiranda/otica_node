@@ -46,7 +46,7 @@ Siga os passos abaixo para executar o projeto em seu ambiente local:
    ```bash
    npm run dev
    ```
-   *(O servidor iniciará normalmente na porta definida, ex: `http://localhost:3000`)*
+   *(O servidor iniciará normalmente na porta definida: `http://localhost:3000`)*
 
 ---
 
